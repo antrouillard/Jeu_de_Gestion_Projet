@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body{
+	display:flex;
+	background: rgba(100,200,0,10);
+}
+.wrapper{
+	background: #fff;
+	border-radius: 10px;
+	width: 96%;
+	height : 96%;
+	margin: 2%;
+	padding: 2%;
+}
+
+.title_1 {
+	font-size: 3rem;
+	color: green; /* Beaucoup trop de nom de couleur, vous
+	pouvez bien entendu utiliser les codes hexa ou du rgb */
+	display: block;
+	text-align: center;
+}

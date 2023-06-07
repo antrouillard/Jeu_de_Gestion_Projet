@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<HTML lang="fr">
+<META charset="utf-8">
+	<HEAD>
+		<link rel="icon" type="image/png" href="static/favicon.ico" />
+		<link rel="stylesheet" href="{{url_for('static',filename='css/InterfaceWEB.css')}}"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+		<script src="{{url_for('static',filename='js/InterfaceWEBMAIN.js')}}"></script>
+		<TITLE>Jeu de Gestion</TITLE>
+	</HEAD>
+	<BODY>
+		<div class="wrapper">
+			<section>
+				<div class="top">
+					<div class="button">
+						  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Déconnexion</a>
+					</div>
+					<div class="Vitesse">
+						Vitesse x1
+					</div>
+				</div>
+				<div class="header">
+					<h1>
+						Jeu de Gestion
+					</h1>
+				</div>
+				<div class="header-2">
+						<h2 id="nomVillage">
+						Nom du Village
+						</h2>
+				</div>
+				<div class="header-3">
+					<h2 id="Username">
+						Username
+					</h2>
+				</div>
+				<div class="tables tables-1">
+					<div class="Habitants">
+						<table class="tabl">
+							<caption style="color:#000000;text-align:center;background-color:#EEEEFF;font-size : 130%;">Habitants<br/> X / Capacité</caption>
+							<tbody>
+								<tr>
+									<td><img src="{{url_for('static',filename='img/habitant.png')}}" alt="SALUT" border="0" class="logo" ></td>
+									<th>Nombre d'Habitants</th>
+									<td id="nbHabitants">XX</td>
+								</tr>
+								<tr>
+									<td><img src="{{url_for('static',filename='img/maison.png')}}" alt="" border="0" class="logo" ></td>
+									<th>Nombre de Maisons</th>
+									<td id="nbMaisons">XX</td>			
+								</tr>
+							</tbody>
+						</table>
+						<div class="button">
+							<button>Construire une nouvelle maison</button>
+						</div>
+					</div>
+					<div class="Stock">
+						<table>
+							<caption style="color:#000000;text-align:center;background-color:#EEEEFF;font-size : 130%;">STOCK<br/> X / Capacité</caption>
+							<tbody>
+								<tr>
+									<td><img src="{{url_for('static',filename='img/fer.png')}}" alt="" border="0" class="logo" ></td>
+									<th>Nombre de Fer</th>
+									<td id="nbFer">XX</td>
+								</tr>
+								<tr>
+									<td><img src="{{url_for('static',filename='img/nourriture.png')}}"" alt="" border="0" class="logo"></td>
+									<th>Nombre de Nouritture</th>
+									<td id="nbNouritture">XX</td>			
+								</tr>
+								<tr>
+									<td><img src="{{url_for('static',filename='img/bois.png')}}" alt="" border="0" class="logo" ></td>
+									<th>Nombre de Bois</th>
+									<td id="nbBois">XX</td>						
+								</tr>
+								<tr>
+									<td><img src="{{url_for('static',filename='img/pierre.png')}}" alt="" border="0" class="logo"></td>
+									<th>Nombre de Pierre</th>
+									<td id="nbPierre">XX</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="tables tables-2">
+					<div class="Batiments">
+						<table class="tabl">
+							<caption style="color:#000000;text-align:center;background-color:#EEEEFF;font-size : 130%;">Batiments<br/> X / nbHab</caption>
+							<tbody>
+								<tr>
+									<td><img src="{{url_for('static',filename='img/tractor.png')}}" alt="" border="0" class="logo" ></td>
+									<th>Nombre de Fermes</th>
+									<td id="nbFermes">XX</td>
+								</tr>
+								<tr>
+									<td><img src="{{url_for('static',filename='img/scierie.png')}}" alt="" border="0" class="logo" ></td>
+									<th>Nombre de Scieries</th>
+									<td id="nbScieries">XX</td>			
+								</tr>
+								<tr>
+									<td><img src="{{url_for('static',filename='img/Mine.png')}}" alt="" border="0" class="logo" ></td>
+									<th>Nombre de Mines</th>
+									<td id="nbMines">XX</td>			
+								</tr>
+								<tr>
+									<td><img src="{{url_for('static',filename='img/carrière.png')}}" alt="" border="0" class="logo" ></td>
+									<th>Nombre de Carrières</th>
+									<td id="nbCarrières">XX</td>			
+								</tr>
+							</tbody>
+						</div>
+						</table>
+						<div class="button">
+							<button>Construire un nouveau batiment</button>
+						</div>
+					</div>
+					<div class="Entrepot">
+						<table>
+							<caption style="color:#000000;text-align:center;background-color:#EEEEFF;font-size : 130%;">Entrepot<br/> X / Capacité</caption>
+							<tbody>
+								<tr>
+									<td><img src="{{url_for('static',filename='img/entrepot.png')}}" alt="" border="0" class="logo" ></td>
+									<th>Entrepot niv.</th>
+									<td id="nivEntrepot">XX</td>
+								</tr>
+								<tr>
+									<td/>
+									<th>Capacité max :</th>
+									<td>300</td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="button">
+							<button>Améliorer l'entrepôt</button>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</BODY>
+</HTML>
