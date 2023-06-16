@@ -46,5 +46,15 @@ $(document).ready(function () {
     $.get("/affiche_nomVillage").done(function (data) {
 		$("#nomVillage").text(data);
 	});
+    
+    let popup = document.getElementById('popup');
+
+    function openPopup(){
+      popup.classList.add('open-popup');
+    }
+
+    function closePopup(){
+      popup.classList.remove('open-popup');
+    }
 	
 });
